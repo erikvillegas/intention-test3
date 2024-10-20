@@ -33,7 +33,7 @@ export async function registerAndSubscribe(onSubscribe: (subs: PushSubscription 
             .then((registration: ServiceWorkerRegistration) => {
                 return registration.pushManager.subscribe({
                     userVisibleOnly: true,
-                    applicationServerKey: process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY,
+                    applicationServerKey: "BI7gXKy0oG_RZBdrFR--AH-2XfUQhhayayLFDvlx-P7CndhekSuisYYSCDiisidGz2FXL_-v47H-bwoAFBQRH5k",
                 });
             })
             .then((subscription: PushSubscription) => {
